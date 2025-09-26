@@ -1,44 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="en">
-
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>آدومکس - قالب مدیریتی ریسپانسیو بوت استرپ 4</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('/images/favicon.ico') }}">
-
-    <!-- CSS
-	============================================ -->
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="{{ asset('/css/vendor/bootstrap.min.css') }}">
-
-    <!-- Icon Font CSS -->
-    <link rel="stylesheet" href="{{ asset('/css/vendor/material-design-iconic-font.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/vendor/font-awesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/vendor/themify-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/vendor/cryptocurrency-icons.css') }}">
-
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="{{ asset('/css/plugins/plugins.css') }}">
-
-    <!-- Helper CSS -->
-    <link rel="stylesheet" href="{{ asset('/css/helper.css') }}">
-
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="{{ asset('/css/style.css') }}">
-
-    <!-- Custom Style CSS Only For Demo Purpose -->
-    <link id="cus-style" rel="stylesheet" href="{{ asset('/css/style-primary.css') }}">
-
-</head>
-
-<body dir="rtl">
+@include("dashboard.includes.header")
 
     <div class="main-wrapper">
 
@@ -89,21 +49,4 @@
 
     </div>
 
-    <!-- JS
-============================================ -->
-
-    <!-- Global Vendor, plugins & Activation JS -->
-    <script src="{{ asset('js/vendor/modernizr-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('js/vendor/jquery-3.3.1.min.js') }}"></script>
-    <script src="{{ asset('js/vendor/popper.min.js') }}"></script>
-    <script src="{{ asset('js/vendor/bootstrap.min.js') }}"></script>
-    <!--Plugins JS-->
-    <script src="{{ asset('js/plugins/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('js/plugins/tippy4.min.js') }}"></script>
-    <!--Main JS-->
-    <script src="{{ asset('js/main.js') }}"></script>
-
-</body>
-
-
-</html>
+@include("dashboard.includes.footer")
