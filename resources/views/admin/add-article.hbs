@@ -1,4 +1,4 @@
-@include("dashboard.includes.header")
+@include("admin.includes.header")
 
       <!-- Content Body Start -->
       <div class="content-body">
@@ -7,7 +7,7 @@
           <!-- Page Heading Start -->
           <div class="col-12 col-lg-auto mb-20">
             <div class="page-heading">
-              <h3 class="title">تنظیمات</h3>
+              <h3 class="title">مطالب <span>/ درج مطلب جدید</span></h3>
             </div>
           </div>
           <!-- Page Heading End -->
@@ -22,36 +22,29 @@
             <div class="box">
               <div class="box-head">
                 <div class="row">
-                  <h4 class="title">تنظیمات بلاگ</h4>
+                  <h4 class="title">اطلاعات مطلب</h4>
                 </div>
               </div>
               <div class="box-body">
                 <form>
                   <div class="row mbn-20">
                     <div class="col-12 mb-20">
-                      <div class="row mbn-20">
-                        <div class="col-lg-6 mb-20">
-                          <label for="formLayoutCity1">عمومی</label>
-                          <input type="text" id="formLayoutCity1" class="form-control" placeholder="عنوان وبسایت" />
-                        </div>
-
-                        <div class="col-lg-6 mb-20">
-                          <label for="formLayoutZip1">محتوا</label>
-                          <input type="text" id="formLayoutZip1" class="form-control" placeholder="10" />
-                        </div>
-                      </div>
+                      <input type="text" id="formLayoutUsername3" class="form-control" placeholder="عنوان مطلب" />
+                    </div>
+                    <div class="col-12 mb-20">
+                      <input type="email" id="formLayoutEmail3" class="form-control" placeholder="نامک مطلب" />
                     </div>
 
                     <div class="col-12 mb-20">
-                      <textarea id="formLayoutMessage1" class="form-control" placeholder="توضیحات وبسایت" rows="3"></textarea>
+                      <textarea id="formLayoutMessage1" class="form-control" placeholder="محتوای مطلب"></textarea>
                     </div>
 
                     <div class="col-12 mb-20">
-                      <h6 class="mb-15">سایر تنظیمات</h6>
-
-                      <div class="adomx-checkbox-radio-group">
-                        <label class="adomx-checkbox primary"><input type="checkbox" checked="" /> <i class="icon"></i> هر کس می تواند ثبت نام کند</label>
-                        <label class="adomx-checkbox primary"><input type="checkbox" checked="" /> <i class="icon"></i> کاربران می توانند دیدگاه‌ ثبت کنند</label>
+                      <h6 class="mb-15">وضعیت مطلب</h6>
+                      <div class="form-group">
+                        <label class="inline"><input name="basicRadio" type="radio" />پیش نویس</label>
+                        <label class="inline"><input name="basicRadio" type="radio" />منتشرشده</label>
+                        <label class="inline"><input name="basicRadio" type="radio" />در حال بازبینی</label>
                       </div>
                     </div>
 
@@ -67,5 +60,5 @@
         </div>
       </div>
       <!-- Content Body End -->
-    
-@include("dashboard.includes.footer")
+
+@include("admin.includes.footer")

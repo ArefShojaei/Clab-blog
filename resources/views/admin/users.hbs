@@ -1,4 +1,4 @@
-@include("dashboard.includes.header")
+@include("admin.includes.header")
 
       <!-- Content Body Start -->
       <div class="content-body">
@@ -7,7 +7,7 @@
           <!-- Page Heading Start -->
           <div class="col-12 col-lg-auto mb-20">
             <div class="page-heading">
-              <h3>مطالب</h3>
+              <h3>کاربران</h3>
             </div>
           </div>
           <!-- Page Heading End -->
@@ -15,8 +15,8 @@
           <!-- Page Button Group Start -->
           <div class="col-12 col-lg-auto mb-20">
             <div class="buttons-group">
-              <a href="{{ toRoute(route('dashboard-articles-create')) }}" class="button button-primary">
-                <span><i class="zmdi zmdi-plus"></i>مطلب جدید</span>
+              <a href="{{ toRoute(route('dashboard-users-create')) }}" class="button button-primary">
+                <span><i class="zmdi zmdi-plus"></i>کاربر جدید</span>
               </a>
             </div>
           </div>
@@ -30,7 +30,7 @@
             <div class="box">
               <div class="box-head">
                 <div class="row">
-                  <h4 class="title">لیست مطالب بلاگ</h4>
+                  <h4 class="title">لیست کاربران</h4>
                 </div>
               </div>
               <div class="box-body">
@@ -39,10 +39,10 @@
                   <thead>
                     <tr>
                       <th>#</th>
-                      <th>عنوان</th>
-                      <th>نویسنده</th>
-                      <th>تاریخ انتشار</th>
-                      <th>تعداد بازدید</th>
+                      <th>نام و نام خانوادگی</th>
+                      <th>ایمیل</th>
+                      <th>نقش</th>
+                      <th>تاریخ عضویت</th>
                       <th>عملیات</th>
                     </tr>
                   </thead>
@@ -52,10 +52,10 @@
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td><a href="###">استفاده از فریمورک Express</a></td>
                       <td>کیوان علی محمدی</td>
-                      <td>1398/2/3</td>
-                      <td>1050</td>
+                      <td>k1.code@gmail.com</td>
+                      <td>ادمین</td>
+                      <td>1403/04/12</td>
                       <td>
                         <div class="table-action-buttons">
                           <a class="edit button button-box button-xs button-info" href="#"><i class="zmdi zmdi-edit"></i></a>
@@ -74,4 +74,4 @@
       </div>
       <!-- Content Body End -->
 
-@include("dashboard.includes.footer")
+@include("admin.includes.header")

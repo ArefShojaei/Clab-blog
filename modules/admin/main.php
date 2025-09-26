@@ -1,7 +1,7 @@
 <?php
 
 import("@core/helpers/route");
-import("@modules/dashboard/_controller");
+import("@modules/admin/_controller");
 
 
 /**

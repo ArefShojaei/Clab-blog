@@ -1,4 +1,4 @@
-@include("dashboard.includes.header")
+@include("admin.includes.header")
 
       <!-- Content Body Start -->
       <div class="content-body">
@@ -40,15 +40,15 @@
                   <!-- Table Body Start -->
                   <tbody>
                     <tr>
-                      <td><img src="assets/images/product/list-product-1.jpg" alt="" class="table-product-image rounded-circle" /> کیوان علی محمدی</td>
+                      <td><img src="{{ asset('/images/product/list-product-1.jpg') }}" alt="" class="table-product-image rounded-circle" /> محمد محبی</td>
                       <td>مطلب خوبی بود</td>
-                      <td>استفاده از فریمورک Express</td>
+                      <td>استفاده از فریمورک Lite-PHP</td>
                       <td>
                         <button class="button button-success"><span>تایید</span></button>
                         <button class="button button-warning"><span>رد</span></button>
                         <button class="button button-danger"><span>حذف</span></button>
                       </td>
-                      <td>1398/2/3</td>
+                      <td>1404/05/07</td>
                     </tr>
                   </tbody>
                   <!-- Table Body End -->
@@ -61,4 +61,4 @@
       </div>
       <!-- Content Body End -->
 
-@include("dashboard.includes.footer")
+@include("admin.includes.footer")

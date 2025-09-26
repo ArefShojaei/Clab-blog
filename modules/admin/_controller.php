@@ -4,29 +4,29 @@ import("@core/helpers/view");
 
 
 function __admin__dashboard_index(): string {
-    return view("dashboard.index");
+    return view("admin.index");
 }
 
 function __admin__articles_index(): string {
-    return view("dashboard.articles");
+    return view("admin.articles");
 }
 
 function __admin__articles_create(): string {
-    return view("dashboard.add-article");
+    return view("admin.add-article");
 }
 
 function __admin__comments_index(): string {
-    return view("dashboard.comments");
+    return view("admin.comments");
 }
 
 function __admin__users_index(): string {
-    return view("dashboard.users");
+    return view("admin.users");
 }
 
 function __admin__users_create(): string {
-    return view("dashboard.add-user");
+    return view("admin.add-user");
 }
 
 function __admin__settings_index(): string {
-    return view("dashboard.settings");
+    return view("admin.settings");
 }

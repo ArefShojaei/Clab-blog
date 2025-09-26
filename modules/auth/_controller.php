@@ -18,3 +18,5 @@ function __auth__register_index(): string {
 function __auth__register_store(): string {
     return view("auth.register");
 }
+
+function __auth__logout_index(): void {}
