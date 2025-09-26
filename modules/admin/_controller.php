@@ -4,7 +4,7 @@ import("@core/helpers/view");
 
 
 function __admin__dashboard_index(): string {
-    return view("admin.index");
+    return view("admin.dashboard");
 }
 
 function __admin__articles_index(): string {
