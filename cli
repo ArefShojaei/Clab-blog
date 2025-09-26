@@ -1,0 +1,12 @@
+<?php
+
+require_once __DIR__ . "/core/error/console/main.php";
+require_once __DIR__ . "/core/loader.php";
+require_once __DIR__ . "/core/modules/console/createCli.php";
+require_once __DIR__ . "/bootstrap/providers.php";
+
+
+/**
+ * Bootstrap CLI
+ */
+createCli($argv);

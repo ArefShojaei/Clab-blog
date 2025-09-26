@@ -1,0 +1,23 @@
+{
+    "name": "arefshojaei/lite-php",
+    "description": "Micro PHP Framework",
+    "keywords": [
+        "Lite-PHP",
+        "Framework",
+        "Modular",
+        "Functional"
+    ],
+    "version": "7.6.17",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ArefShojaei",
+            "email": "arefshojaei82dev@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^8.0"
+    }
+}
