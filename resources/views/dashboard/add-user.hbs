@@ -1,0 +1,219 @@
+@include("dashboard.includes.header")
+
+    <div class="main-wrapper">
+      <!-- Header Section Start -->
+      <div class="header-section">
+        <div class="container-fluid">
+          <div class="row justify-content-between align-items-center">
+            <!-- Header Logo (Header Left) Start -->
+            <div class="header-logo col-auto">
+              <a href="index.html">
+                <img src="assets/images/logo/logo.png" alt="" />
+                <img src="assets/images/logo/logo-light.png" class="logo-light" alt="" />
+              </a>
+            </div>
+            <!-- Header Logo (Header Left) End -->
+
+            <!-- Header Right Start -->
+            <div class="header-right flex-grow-1 col-auto">
+              <div class="row justify-content-between align-items-center">
+                <!-- Side Header Toggle & Search Start -->
+                <div class="col-auto">
+                  <div class="row align-items-center">
+                    <!--Side Header Toggle-->
+                    <div class="col-auto">
+                      <button class="side-header-toggle"><i class="zmdi zmdi-menu"></i></button>
+                    </div>
+
+                    <!--Header Search-->
+                    <div class="col-auto">
+                      <div class="header-search">
+                        <button class="header-search-open d-block d-xl-none"><i class="zmdi zmdi-search"></i></button>
+
+                        <div class="header-search-form">
+                          <form action="#">
+                            <input type="text" placeholder="جستجو کنید" />
+                            <button><i class="zmdi zmdi-search"></i></button>
+                          </form>
+                          <button class="header-search-close d-block d-xl-none"><i class="zmdi zmdi-close"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Side Header Toggle & Search End -->
+
+                <!-- Header Notifications Area Start -->
+                <div class="col-auto">
+                  <ul class="header-notification-area">
+                    <!--User-->
+                    <li class="adomx-dropdown col-auto">
+                      <a class="toggle" href="#">
+                        <span class="user">
+                          <span class="avatar">
+                            <img src="assets/images/avatar/avatar-1.jpg" alt="" />
+                            <span class="status"></span>
+                          </span>
+                          <span class="name">طاهر نصیری</span>
+                        </span>
+                      </a>
+
+                      <!-- Dropdown -->
+                      <div class="adomx-dropdown-menu dropdown-menu-user">
+                        <div class="head">
+                          <h5 class="name"><a href="#">طاهر نصیری</a></h5>
+                          <a class="mail" href="#">mailnam@mail.com</a>
+                        </div>
+                        <div class="body">
+                          <ul>
+                            <li>
+                              <a href="#"><i class="zmdi zmdi-account"></i>پروفایل</a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="zmdi zmdi-email-open"></i>صندوق ورودی</a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="zmdi zmdi-wallpaper"></i>فعالیت</a>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <a href="#"><i class="zmdi zmdi-settings"></i>تنظیمات</a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="zmdi zmdi-lock-open"></i>خروج</a>
+                            </li>
+                          </ul>
+                          <ul>
+                            <li>
+                              <a href="#"><i class="zmdi zmdi-paypal"></i>پرداخت ها</a>
+                            </li>
+                            <li>
+                              <a href="#"><i class="zmdi zmdi-google-pages"></i>صورتحساب</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Header Notifications Area End -->
+              </div>
+            </div>
+            <!-- Header Right End -->
+          </div>
+        </div>
+      </div>
+      <!-- Header Section End -->
+      <!-- Side Header Start -->
+      <div class="side-header show">
+        <button class="side-header-close"><i class="zmdi zmdi-close"></i></button>
+        <!-- Side Header Inner Start -->
+        <div class="side-header-inner custom-scroll">
+          <nav class="side-header-menu" id="side-header-menu">
+            <ul>
+              <li>
+                <a href="dashboard.html"><i class="ti-home"></i> <span>داشبورد</span></a>
+              </li>
+
+              <li class="has-sub-menu">
+                <a href="#"
+                  ><i class="ti-pencil-alt"></i> <span> مطالب</span><span class="menu-expand"><i class="zmdi zmdi-chevron-down"></i></span
+                ></a>
+                <ul class="side-header-sub-menu" style="display: none;">
+                  <li>
+                    <a href="posts.html"><span>لیست مطالب</span></a>
+                  </li>
+                  <li>
+                    <a href="new-post.html"><span>مطلب جدید</span></a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="comments.html"><i class="ti-comments"></i> <span>دیدگاه‌ها</span></a>
+              </li>
+              <li>
+                <a href="users.html"><i class="ti-user"></i> <span>کاربران</span></a>
+              </li>
+              <li>
+                <a href="settings.html"><i class="ti-settings"></i> <span>تنظیمات</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Side Header Inner End -->
+      </div>
+      <!-- Side Header End -->
+
+      <!-- Content Body Start -->
+      <div class="content-body">
+        <!-- Page Headings Start -->
+        <div class="row justify-content-between align-items-center mb-10">
+          <!-- Page Heading Start -->
+          <div class="col-12 col-lg-auto mb-20">
+            <div class="page-heading">
+              <h3 class="title">کاربر <span>/ اضافه کاربر جدید</span></h3>
+            </div>
+          </div>
+          <!-- Page Heading End -->
+
+          <!-- Page Button Group End -->
+        </div>
+        <!-- Page Headings End -->
+
+        <div class="row mbn-30">
+          <!-- Revenue Statistics Chart Start -->
+          <div class="col-md-12 mb-30">
+            <div class="box">
+              <div class="box-head">
+                <div class="row">
+                  <h4 class="title">اطلاعات کاربر</h4>
+                </div>
+              </div>
+              <div class="box-body">
+                <form>
+                  <div class="row mbn-20">
+                    <div class="col-6 mb-20">
+                      <input type="text" id="formLayoutUsername3" class="form-control" placeholder="نام و نام خانوادگی" />
+                    </div>
+                    <div class="col-6 mb-20">
+                      <input type="email" id="formLayoutEmail3" class="form-control" placeholder="ایمیل" />
+                    </div>
+
+                    <div class="col-6 mb-20">
+                      <input type="email" id="formLayoutEmail3" class="form-control" placeholder="تاریخ عضویت" />
+                    </div>
+
+                    <div class="col-12 mb-20">
+                      <h5 class="sub-title">نقش</h5>
+                      <div class="adomx-checkbox-radio-group">
+                        <label class="adomx-radio-2"><input type="radio" name="adomxRadio2"><i class="icon"></i>ادمین</label>
+                        <label class="adomx-radio-2"><input type="radio" name="adomxRadio2"><i class="icon"></i>کاربر</label>
+                    </div>
+                    </div>
+
+                    <div class="col-12 mb-20">
+                      <input type="submit" value="ذخیره سازی" class="button button-primary" />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- Revenue Statistics Chart End -->
+        </div>
+      </div>
+      <!-- Content Body End -->
+
+      <!-- Footer Section Start -->
+      <div class="footer-section">
+        <div class="container-fluid">
+          <div class="footer-copyright text-center">
+            <p class="text-body-light">1399 &copy;</p>
+          </div>
+        </div>
+      </div>
+      <!-- Footer Section End -->
+    </div>
+
+@include("dashboard.includes.footer")
