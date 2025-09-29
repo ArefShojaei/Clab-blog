@@ -13,8 +13,9 @@ return [
         registerPlugin("localDatabaseCleaner", ["expireTime" => TIME_ONE_HOURE]),
     ],
     "modules" => [
-        // registerModule("database"),
+        registerModule("database"),
         registerModule("app"),
         registerModule("auth"),
+        registerModule("admin"),
     ],
 ];
