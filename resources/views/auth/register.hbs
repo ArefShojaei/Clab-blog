@@ -57,15 +57,16 @@
                             </div>
 
                             <div class="login-register-form">
-                                <form action="#">
+                                <form action="{{ toRoute(route('auth-register')) }}" method="post">
                                     <div class="row">
-
-                                        <div class="col-12 mb-20"><input class="form-control" type="text" placeholder="نام کاربری / ایمیل"></div>
-                                        <div class="col-12 mb-20"><input class="form-control" type="password" placeholder="رمز عبور"></div>
-                                        <div class="col-12 mb-20"><input class="form-control" type="password" placeholder="تایید رمز عبور"></div>
+                                        @csrf
+                                        <div class="col-12 mb-20"><input class="form-control" name="fullname" type="text" placeholder="نام و نام خانوادگی"></div>
+                                        <div class="col-12 mb-20"><input class="form-control" name="email" type="email" placeholder="ایمیل"></div>
+                                        <div class="col-12 mb-20"><input class="form-control" name="password" type="password" placeholder="رمز عبور"></div>
+                                        <div class="col-12 mb-20"><input class="form-control" name="password-confirmation" type="password" placeholder="تایید رمز عبور"></div>
                                         <div class="col-12">
                                             <div class="row justify-content-between">
-                                                <div class="col-auto mb-15">در حال حاضر حساب کاربری دارید؟ <a href="login.html">هم اکنون وارد شوید.</a></div>
+                                                <div class="col-auto mb-15">در حال حاضر حساب کاربری دارید؟ <a href="{{ toRoute(route('auth-login')) }}">هم اکنون وارد شوید.</a></div>
                                             </div>
                                         </div>
                                         <div class="col-12 mt-10"><button class="button button-primary button-outline">ثبت نام</button></div>
