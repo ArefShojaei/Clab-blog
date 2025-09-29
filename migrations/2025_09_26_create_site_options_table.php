@@ -6,7 +6,7 @@ import("@core/helpers/migration");
 
 createMigration("site_options", [
     "up" => function($table) {
-        column_id($table, "id");
+        column_increment($table, "id");
         column_string($table, "title");
         column_string($table, "description");
         column_integer($table, "articles_count_in_per_page");

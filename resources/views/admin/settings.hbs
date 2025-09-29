@@ -26,32 +26,33 @@
                 </div>
               </div>
               <div class="box-body">
-                <form>
+                <form action="{{ toRoute(route('dashboard-settings')) }}" method="post">
+                  @csrf
                   <div class="row mbn-20">
                     <div class="col-12 mb-20">
                       <div class="row mbn-20">
                         <div class="col-lg-6 mb-20">
                           <label for="formLayoutCity1">عمومی</label>
-                          <input type="text" id="formLayoutCity1" class="form-control" placeholder="عنوان وبسایت" />
+                          <input type="text" id="formLayoutCity1" class="form-control" name="title" placeholder="عنوان وبسایت" value="{{ $title }}" />
                         </div>
 
                         <div class="col-lg-6 mb-20">
                           <label for="formLayoutZip1">محتوا</label>
-                          <input type="text" id="formLayoutZip1" class="form-control" placeholder="10" />
+                          <input type="number" id="formLayoutZip1" class="form-control" name="articles_count_in_per_page" placeholder="10" value="{{ $articles_count_in_per_page }}" />
                         </div>
                       </div>
                     </div>
 
                     <div class="col-12 mb-20">
-                      <textarea id="formLayoutMessage1" class="form-control" placeholder="توضیحات وبسایت" rows="3"></textarea>
+                      <textarea id="formLayoutMessage1" class="form-control" name="description" placeholder="توضیحات وبسایت" rows="3">{{ $description }}</textarea>
                     </div>
 
                     <div class="col-12 mb-20">
                       <h6 class="mb-15">سایر تنظیمات</h6>
 
                       <div class="adomx-checkbox-radio-group">
-                        <label class="adomx-checkbox primary"><input type="checkbox" checked="" /> <i class="icon"></i> هر کس می تواند ثبت نام کند</label>
-                        <label class="adomx-checkbox primary"><input type="checkbox" checked="" /> <i class="icon"></i> کاربران می توانند دیدگاه‌ ثبت کنند</label>
+                        <label class="adomx-checkbox primary"><input type="checkbox" name="is_user_can_loggedIn" @if($is_user_can_loggedIn) checked="{{ $is_user_can_loggedIn }}" @endif /> <i class="icon"></i> هر کس می تواند ثبت نام کند</label>
+                        <label class="adomx-checkbox primary"><input type="checkbox" name="is_user_put_comment" @if($is_user_put_comment) checked="{{ $is_user_put_comment }}" @endif /> <i class="icon"></i> کاربران می توانند دیدگاه‌ ثبت کنند</label>
                       </div>
                     </div>
 
