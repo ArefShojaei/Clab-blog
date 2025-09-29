@@ -1,7 +1,7 @@
 <?php
 
 import("@core/helpers/route");
-import("@modules/auth/_controller");
+import("@auth/_controller");
 
 
 /**
